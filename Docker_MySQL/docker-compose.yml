@@ -17,7 +17,7 @@ services:
       - "6033:3306"
     volumes:
       - dbdata:/var/lib/mysql
-      - ./scripts:/scripts/var/lib/mysql-files
+      - ./scripts:/var/lib/mysql-files
   phpmyadmin:
     image: phpmyadmin:5.2.0
     container_name: pma
