@@ -60,7 +60,7 @@ CREATE TABLE t_ligne_de_commande(
    prix_unitaire DECIMAL(19,4) NOT NULL,
    commande_fk INT NOT NULL,
    produit_fk INT NOT NULL,
-   produit_enfant_fk INT NOT NULL,
+   produit_enfant_fk INT,
    PRIMARY KEY(ligne_de_commande_id),
    FOREIGN KEY(commande_fk) REFERENCES t_commande(commande_id),
    FOREIGN KEY(produit_fk) REFERENCES t_produit(produit_id),
