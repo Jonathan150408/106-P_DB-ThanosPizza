@@ -1,17 +1,12 @@
--- ajoute manuellement
 CREATE DATABASE db_Thanoss_Pizza;
 USE db_Thanoss_Pizza;
-
--- script de looping
 CREATE TABLE t_client(
    client_id INT AUTO_INCREMENT,
    nom VARCHAR(50) NOT NULL,
    prenom VARCHAR(50),
    courriel VARCHAR(320),
-   telephone VARCHAR(18) NOT NULL,
-   PRIMARY KEY(client_id),
-   UNIQUE(courriel),
-   UNIQUE(telephone)
+   telephone VARCHAR(18),
+   PRIMARY KEY(client_id)
 );
 
 CREATE TABLE t_adresse(
